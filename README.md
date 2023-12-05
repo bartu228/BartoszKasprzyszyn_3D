@@ -1,4 +1,3 @@
-# BartoszKasprzyszyn_3D
 
 ## Informacje szkolne
  - Klasa: 3D
