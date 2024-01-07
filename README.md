@@ -10,8 +10,3 @@
 zadanie
 
 </a>
-<a href="ZOO.html">
-
- LEKCJA5_zadanie2 
-
-</a>
