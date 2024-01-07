@@ -6,8 +6,12 @@
 
 
 <a href="owoce.html">
+<body>
 zadanie
+</body>
 </a>
 <a href="ZOO.html">
-LEKCJA5_zadanie2
+<body> 
+<div> LEKCJA5_zadanie2 </div>
+</body>
 </a>
