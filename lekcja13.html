@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabele</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .table1 th, .table1 td {
+            background-color: #d0ebff; /* jasnoniebieski */
+        }
+        .table2 th, .table2 td {
+            background-color: #ffe0cc; /* jasnopomarańczowy */
+        }
+        .table3 th, .table3 td {
+            background-color: #e3ffd9; /* jasnozielony */
+        }
+        .table2 .green-cell, .table3 .green-cell {
+            background-color: #a0d6b4; /* ciemnozielony */
+        }
+    </style>
+</head>
+<body>
+
+<h2>Tabela bez scalania</h2>
+<div>
+    <table class="table1">
+        <tr>
+            <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
+        </tr>
+        <tr>
+            <td></td><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td>
+        </tr>
+        <tr>
+            <td></td><td>f</td><td>g</td><td>h</td><td>i</td><td>j</td>
+        </tr>
+        <tr>
+            <td></td><td>k</td><td>l</td><td>m</td><td>n</td><td>o</td>
+        </tr>
+        <tr>
+            <td></td><td class="green-cell">p</td><td class="green-cell">q</td><td class="green-cell">r</td><td class="green-cell">s</td><td class="green-cell">t</td>
+        </tr>
+        <tr>
+            <td></td><td class="green-cell">u</td><td class="green-cell">v</td><td class="green-cell">w</td><td class="green-cell">y</td><td class="green-cell">z</td>
+        </tr>
+    </table>
+</div>
+
+<h2>Tabela z scalaniem</h2>
+<div>
+    <table class="table2">
+        <tr>
+            <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
+        </tr>
+        <tr>
+            <td></td><td>a</td><td colspan="2">b, c</td><td>d</td><td>e</td>
+        </tr>
+        <tr>
+            <td></td><td>f</td><td>g</td><td>h</td><td colspan="2" class="green-cell">j, o</td>
+        </tr>
+        <tr>
+            <td></td><td>k</td><td>l</td><td>m</td><td>n</td><td>o</td>
+        </tr>
+        <tr>
+            <td></td><td colspan="5" class="green-cell">p, q, r, u, v, w</td>
+        </tr>
+        <tr>
+            <td></td><td>y</td><td>z</td><td></td><td></td><td></td>
+        </tr>
+    </table>
+</div>
+
+<h2>Tabela z scalonymi inicjałami</h2>
+<div>
+    <table class="table3">
+        <tr>
+            <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
+        </tr>
+        <tr>
+            <td></td><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td>
+        </tr>
+        <tr>
+            <td></td><td colspan="5" class="green-cell">BK</td>
+        </tr>
+        <tr>
+            <td></td><td>p</td><td>q</td><td>r</td><td>s</td><td>t</td>
+        </tr>
+        <tr>
+            <td></td><td>u</td><td>v</td><td>w</td><td>y</td><td>z</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
